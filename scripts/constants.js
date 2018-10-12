@@ -570,7 +570,7 @@ var apothecary = {},
 		['Word of Life', 1],
 		['Dust to Dust', 2],
 		['Primal Clay', 2],
-		['Word of Wisdom', 2],
+		['Words of Wisdom', 2],
 		['Holy Proxy', 3],
 		['Shepherd of Souls', 3]
 	];
