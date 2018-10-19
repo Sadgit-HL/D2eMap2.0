@@ -242,7 +242,7 @@ for (var i = 0; i < MONSTERS_LIST.length; i++) {
 
 SEARCH_ITEMS_LIST = [
 	'Haste Potion',
-	'Timmoran Shard',
+	'Timmorran Shard',
 	'Scroll of Coercion',
 	'Masterwork Tools',
 	'Curse Ward',
@@ -251,7 +251,7 @@ SEARCH_ITEMS_LIST = [
 	'Truestrike Potion',
 	'Flipped',
 	'Flipped (Haste Potion)',
-	'Flipped (Timmoran Shard)',
+	'Flipped (Timmorran Shard)',
 	'Flipped (Scroll of Coercion)',
 	'Flipped (Masterwork Tools)',
 	'Flipped (Blueprint)',
