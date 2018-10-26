@@ -771,7 +771,7 @@ var apothecary = {},
 
 	psychic.skills = [
 		['Mental Assault', 0],
-		['Darts', 0, hand],
+		['Imbued Darts', 0, hand],
 		['Fortune Tellers Hat', 0, item],
 		['Clairvoyance', 1],
 		['Mind over Matter', 1],
