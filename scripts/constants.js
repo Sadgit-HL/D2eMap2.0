@@ -1027,7 +1027,7 @@ var HEROES_LIST = [
 	['Krutzbeck',12,4,war],
 	['Jonas the Kind',10,4,sup],
 	['Laughin Buldar',14,3,war],
-	['Elga the Pilgrim',10,4,sup],
+	['Elga the Mystic',10,4,sup],
 	['Runemaker Tara',10,4,wiz]
 ];
 
