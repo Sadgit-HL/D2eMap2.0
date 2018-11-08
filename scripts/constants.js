@@ -303,7 +303,7 @@ ITEMS_LIST = [
 	['Leather Armor', armor],
 	['Lifedrain Scepter', hand],
 	['Light Hammer', hand],
-	['Lucky Charm ', item],
+	['Lucky Charm', item],
 	['Mace Of Aver', twohand],
 	['Magic Staff', twohand],
 	['Magma Blast', twohand],
