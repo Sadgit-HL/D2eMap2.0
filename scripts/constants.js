@@ -861,7 +861,7 @@ var apothecary = {},
 
 	thief.skills = [
 		['Appraisal', 1],
-		['Bushwack', 3],
+		['Bushwhack', 3],
 		['Caltrops', 2],
 		['Dirty Tricks', 1],
 		['Greedy', 0],
