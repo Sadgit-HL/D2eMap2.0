@@ -773,14 +773,15 @@ var apothecary = {},
 		['Mental Assault', 0],
 		['Imbued Darts', 0, hand],
 		['Fortune Tellers Hat', 0, item],
-		['Clairvoyance', 1],
-		['Mind over Matter', 1],
-		['Possession', 1],
-		['Empathic Resolve', 2],
-		['Reaching Out', 2],
-		['Overload', 2],
+		['Clairvoyant', 1],
+		['Overload', 1],
+		['Empathic Resolve', 1],		
+		['Mental Fortitude', 2],
+		['Possession', 2],
+		['Reaching Out', 2],		
 		['Towering Intellect', 3],
-		['Mental Fortitude', 3]
+		['Mind over Matter', 3]
+		
 	];
 
 	runemaster.skills = [
