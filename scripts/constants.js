@@ -724,16 +724,19 @@ var apothecary = {},
 
 	marshal.skills = [
 		['By The Book', 2],
+		['By The Book Coop', 2],
 		['Crushing Blow', 3],
 		['I Am The Law', 2],
 		['Just Reward', 1],
+		['Just Reward Coop', 1],
 		['Last Stand', 3],
 		['Retribution', 0],
 		['Shockwave', 1],
 		['Signet Ring', 0, item],
 		['Vigilant Watch', 2],
 		['War Hammer', 0, twohand],
-		['Zealous Fire', 1]
+		['Zealous Fire', 1],
+		['Zealous Fire Coop', 1]
 	];
 
 	monk.skills = [
