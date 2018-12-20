@@ -12,7 +12,7 @@ function listsort(a, b) {
 var bg2e = 'Second Edition Base Game', BoW = 'Bonds of the Wild', CoD = 'Crown of Destiny', CotF = 'Crusade of the Forgotten', GoD = 'Guardians of Deephall',
 	LoR = 'Labyrinth of Ruin', LoW = 'Lair of the Wyrm', MoR = 'Manor of Ravens', OotO = 'Oath of the Outcast',
 	SoE = 'Shards of Everdark', SoN = 'Shadow of Narekhall', SotS = 'Stewards of the Secret', TF = 'The Trollfens', ToC = 'Treaty of Champions',
-	VoD = 'Visions of Dawn', CK = 'Conversion Kit', MoB = 'Mists of Bilehall', CtR = 'The Chains that Rust', WoW = 'Weapons of War'; 
+	VoD = 'Visions of Dawn', CK = 'Conversion Kit', MoB = 'Mists of Bilehall', CtR = 'The Chains that Rust', SotP = 'Sands of the Past'; 
 var Building = 'Building',
 	Cave = 'Cave',
 	Civilized = 'Civilized',
@@ -38,6 +38,7 @@ var MONSTERS_LIST = [
 	['Blood Ape',2,2,false,SotS,[Hot,Cave],true],
 	['Bone Horror',1,1,false,MoB,[Cave,Cursed],true],
 	['Broodwalker',1,1,false,MoB,[Dark,Building],true],
+	['Burrowing Horror',1,1,false,SotP,[Hot,Mountain],true],
 	['Carrion Drake',1,1,false,LoR,[Water,Dark],true],
 	['Cave Spider',1,1,false,bg2e,[Wilderness,Cave],true],
 	['Changeling',1,1,false,SoN,[Civilized,Cursed],true],
@@ -68,7 +69,7 @@ var MONSTERS_LIST = [
 	['Marrow Priest',1,1,false,CtR,[Dark, Building],true],
 	['Medusa',1,1,true,CotF,[Cursed,Building],true],
 	['Merriod',2,2,false,bg2e,[Wilderness,Water],true],
-	['Mummy Warrior',1,1,true,WoW,[Cursed,Building],true],
+	['Sacrophagus Guard',1,1,true,SotP,[Cursed,Building],true],
 	['Naga',2,2,true,SotS,[Water,Cave],true],
 	['Ogre',2,2,false,VoD,[Building,Cave],true],
 	['Plague Worm',1,2,false,TF,[Water,Cave],true],
@@ -99,7 +100,7 @@ var EXPANSIONS = [
 	[TF,'Small'],
 	[MoB,'Small'],
 	[CtR,'Small'],
-	[WoW,'Small'],
+	[SotP,'Small'],
 	[BoW,'H&M'],
 	[CoD,'H&M'],
 	[CotF,'H&M'],
@@ -161,6 +162,7 @@ var MONSTERS_HP = [
 	['Blood Ape',5,7,7,9],
 	['Bone Horror',5,7,6,9],
 	['Broodwalker',7,10,8,12],
+	['Burrowing Horror',7,9,10,12],
 	['Carrion Drake',6,8,7,10],
 	['Cave Spider',3,5,5,7],
 	['Changeling',4,6,6,8],
@@ -191,7 +193,7 @@ var MONSTERS_HP = [
 	['Marrow Priest',7,9,8,10],
 	['Medusa',4,6,6,9],
 	['Merriod',5,7,7,9],
-	['Mummy Warrior',4,6,6,8],
+	['Sarcophagus Guard',4,6,6,8],
 	['Naga',4,5,6,7],
 	['Ogre',6,8,9,12],
 	['Plague Worm',5,7,6,9],
@@ -486,7 +488,7 @@ TAINTED_CARDS_LIST = [
 
 //Classes
 var apothecary = {},
-	artificer = {},	
+	hierophant = {},	
 	bard = {},
 	disciple = {},
 	prophet = {},
@@ -515,7 +517,7 @@ var apothecary = {},
 	shadowwalker = {};
 
 	apothecary.title = 'Apothecary';
-	artificer.title = 'Artificer';
+	hierophant.title = 'Hierophant';
 	bard.title = 'Bard';
 	disciple.title = 'Disciple';
 	prophet.title = 'Prophet';
@@ -561,18 +563,18 @@ var apothecary = {},
 		['Potent Remedies', 3]
 	];
 
-	artificer.skills = [
-		['Blessed Artifice', 0],
-		['Iron Chisel', 0, hand],
-		['Sacred Script', 0, item],
+	hierophant.skills = [
+		['Embalming Ritual', 0],
+		['Ceremonial Staff', 0, hand],
+		['Sacred Papyrus', 0, item],
 		['Path of the Gods', 1],
-		['Psalm', 1],
-		['Word of Life', 1],
-		['Dust to Dust', 2],
-		['Primal Clay', 2],
-		['Words of Wisdom', 2],
+		['Hymn', 1],
+		['River of Life', 1],
+		['Sands of Vengance', 2],
+		['Preserving Herbs', 2],
+		['Hieroglyphs of Truth', 2],
 		['Holy Proxy', 3],
-		['Shepherd of Souls', 3]
+		['Gift of the Desert', 3]
 	];
 
 	bard.skills = [
@@ -771,9 +773,10 @@ var apothecary = {},
 
 	psychic.skills = [
 		['Mental Assault', 0],
-		['Imbued Darts', 0, hand],
+		['Shadow Darts', 0, hand],
 		['Fortune Tellers Hat', 0, item],
 		['Clairvoyant', 1],
+		['Clairvoyant Coop', 1],
 		['Overload', 1],
 		['Empathic Resolve', 1],		
 		['Mental Fortitude', 2],
@@ -921,7 +924,7 @@ var wiz = {},
 	rog.title = 'Scout';
 	rog.classes = [bountyHunter, monk, shadowwalker, stalker, thief, treasureHunter, wildlander];
 	sup.title = 'Healer';
-	sup.classes = [apothecary, artificer, bard, disciple, prophet, spiritspeaker, watchman];
+	sup.classes = [apothecary, hierophant, bard, disciple, prophet, spiritspeaker, watchman];
 
 var ARCHETYPE_CLASSES = 'mage warrior scout healer';
 var ARCHETYPES_LIST = [wiz, war, rog, sup];
@@ -1028,7 +1031,7 @@ var HEROES_LIST = [
 	['Krutzbeck',12,4,war],
 	['Jonas the Kind',10,4,sup],
 	['Laughin Buldar',14,3,war],
-	['Elga the Mystic',10,4,sup],
+	['Elga the Pilgrim',10,4,sup],
 	['Runemaker Tara',10,4,wiz]
 ];
 
@@ -1057,7 +1060,7 @@ ALLIES_SKILLS['Raythen'] = ['Back Strike', 'Night Prowler', 'Sharp Eyes'];
 
 FAMILIARS_LIST = [
 	['Brightblaze',true],
-        ['Divine Construct',true],	
+        ['Bandaged Servant',true],	
         ['Mirror Image',false],
 	['Pico',true],
 	['Raven Flock',true],
