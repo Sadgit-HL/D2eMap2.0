@@ -38,7 +38,7 @@ var MONSTERS_LIST = [
 	['Blood Ape',2,2,false,SotS,[Hot,Cave],true],
 	['Bone Horror',1,1,false,MoB,[Cave,Cursed],true],
 	['Broodwalker',1,1,false,MoB,[Dark,Building],true],
-	['Burrowing Horror',1,1,false,SotP,[Hot,Mountain],true],
+	['Burrowing Horror',2,2,false,SotP,[Hot,Mountain],true],
 	['Carrion Drake',1,1,false,LoR,[Water,Dark],true],
 	['Cave Spider',1,1,false,bg2e,[Wilderness,Cave],true],
 	['Changeling',1,1,false,SoN,[Civilized,Cursed],true],
@@ -1245,10 +1245,12 @@ OBJECTIVES_LIST = [
 
 MISCELLANEOUS_LIST = [
 	'Challenge',
+	'Fatigue',
 	'Search',
 	'Secret Entrance Indoors',
 	'Secret Entrance Outdoors',
 	'Sun Stone'
+
 ];
 
 CONDITIONS_INITIAL = [
@@ -1271,7 +1273,11 @@ CONDITIONS_INITIAL = [
 	['Tracked',false],
 	['Objective',false],
 	['Threat',false],
-	['Valor',false]
+	['Valor',false],
+        ['Healer',false],
+	['Mage',false],
+	['Scout',false],
+	['Warrior',false]
 ];
 
 var CONDITIONS = {};
@@ -1302,7 +1308,11 @@ TRACKING_TOKENS_INITIAL = [
 	['Tracked',false],
 	['Objective',false],
 	['Threat',false],
-	['Valor',false]
+	['Valor',false],
+        ['Healer',false],
+	['Mage',false],
+	['Scout',false],
+	['Warrior',false]
 ];
 
 var TRACKING_TOKENS = {};
