@@ -193,7 +193,7 @@ var MONSTERS_HP = [
 	['Marrow Priest',7,9,8,10],
 	['Medusa',4,6,6,9],
 	['Merriod',5,7,7,9],
-	['Sarcophagus Guard',4,6,6,8],
+	['Sacrophagus Guard',4,6,6,8],
 	['Naga',4,5,6,7],
 	['Ogre',6,8,9,12],
 	['Plague Worm',5,7,6,9],
