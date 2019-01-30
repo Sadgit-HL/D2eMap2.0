@@ -69,7 +69,7 @@ var MONSTERS_LIST = [
 	['Marrow Priest',1,1,false,CtR,[Dark, Building],true],
 	['Medusa',1,1,true,CotF,[Cursed,Building],true],
 	['Merriod',2,2,false,bg2e,[Wilderness,Water],true],
-	['Sacrophagus Guard',1,1,true,SotP,[Cursed,Building],true],
+	['Sarcophagus Guard',1,1,true,SotP,[Cursed,Building],true],
 	['Naga',2,2,true,SotS,[Water,Cave],true],
 	['Ogre',2,2,false,VoD,[Building,Cave],true],
 	['Plague Worm',1,2,false,TF,[Water,Cave],true],
