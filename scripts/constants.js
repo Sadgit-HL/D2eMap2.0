@@ -243,6 +243,22 @@ for (var i = 0; i < MONSTERS_LIST.length; i++) {
 }
 
 SEARCH_ITEMS_LIST = [
+	'Curse Doll',
+	'Fire Flask',
+	'Health Potion',
+	'Nothing',
+	'Power Potion',
+	'Secret Passage',
+	'Stamina Potion',
+	'Treasure Chest',
+	'Warding Talisman',
+	'Flipped',
+	'Flipped (Curse Doll)',
+	'Flipped (Fire Flask)',
+	'Flipped (Health Potion)',
+	'Flipped (Power Potion)',
+	'Flipped (Stamina Potion)',
+	'Flipped (Warding Talisman)',
 	'Haste Potion',
 	'Timmorran Shard',
 	'Scroll of Coercion',
