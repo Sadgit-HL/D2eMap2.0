@@ -272,6 +272,7 @@ SEARCH_ITEMS_LIST = [
 	'Flipped (Timmorran Shard)',
 	'Flipped (Scroll of Coercion)',
 	'Flipped (Masterwork Tools)',
+	'Flipped (Curse Ward)',
 	'Flipped (Blueprint)',
 	'Flipped (Truestrike Potion)',
 	'Flipped (Protection Sphere)'
@@ -416,7 +417,16 @@ TIER2_ITEMS_LIST = [
 	['Stone Armor', armor],
 	['Tival Crystal', item],
 	['Vestments Of Kellos', armor],
-	['Winged Blade', hand]
+	['Winged Blade', hand],
+	['Sunlight Ward', item], 
+	['Star of Atar', item], 
+	['Starmetal Khopesh', hand],
+	['Shimmering Shield', hand],
+	['Scarab Amulet', item],
+	['Lost Caliphs Crook', twohand],
+	['Ibis Bow', twohand],
+	['Eye of the Night', item],
+	['Chain Sickle', twohand]
 ];
 
 RELICS_LIST = [
@@ -590,13 +600,13 @@ var apothecary = {},
 	hierophant.skills = [
 		['Embalming Ritual', 0],
 		['Ceremonial Staff', 0, hand],
-		['Sacred Papyrus', 0, item],
-		['Path of the Gods', 1],
+		['Sacred Scriptures', 0, item],
+		['Path of Prophecy', 1],
 		['Hymn', 1],
-		['River of Life', 1],
+		['Eternal Service', 1],
 		['Sands of Vengance', 2],
-		['Preserving Herbs', 2],
-		['Hieroglyphs of Truth', 2],
+		['Shroud of Respite', 2],
+		['Words of Wisdom', 2],
 		['Holy Proxy', 3],
 		['Gift of the Desert', 3]
 	];
@@ -801,9 +811,9 @@ var apothecary = {},
 	psychic.skills = [
 		['Mental Assault', 0],
 		['Shadow Darts', 0, hand],
-		['Fortune Tellers Hat', 0, item],
-		['Clairvoyant', 1],
-		['Clairvoyant Coop', 1],
+		['Minds Eye Turban', 0, item],
+		['Clairvoyance', 1],
+		['Clairvoyance Coop', 1],
 		['Overload', 1],
 		['Empathic Resolve', 1],		
 		['Mental Fortitude', 2],
