@@ -1438,7 +1438,7 @@ OVERLORD_CARDS_LIST = [
 	['Dark Fortitude', 'Warlord', 2, '1'],
 	['Bloodlust', 'Warlord', 1, '2'],
 	['Expert Blow', 'Warlord', 1, '2'],
-	['Reinforce', 'Warlord', 1, '2'],
+	['Reinforce', 'Warlord', 1, '3'],
 	['Dark Remedy', 'Universal', 2, '1'],
 	['Dark Resilience', 'Universal', 1, '1'],
 	['Placebo', 'Universal', 1, '1'],
