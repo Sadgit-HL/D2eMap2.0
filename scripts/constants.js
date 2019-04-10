@@ -607,7 +607,7 @@ var apothecary = {},
 		['Sands of Vengance', 2],
 		['Shroud of Respite', 2],
 		['Words of Wisdom', 2],
-		['Holy Proxy', 3],
+		['Royal Guard', 3],
 		['Gift of the Desert', 3]
 	];
 
